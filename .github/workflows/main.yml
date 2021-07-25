@@ -27,13 +27,13 @@ jobs:
           wait-on: 'http://localhost:3000'
           
       - name: Upload screenshots
-        uses: actions/upload-artifact@2.2.0
+        uses: actions/upload-artifact@2
         if: failure()
         with: 
           name: screenshots
           
       - name: Upload videos
-        uses: actions/upload-artifact@2.2.0
+        uses: actions/upload-artifact@2
         if: always()
         with: 
           name: screenshots
